@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Navbar Tutorial</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container-icon">
+      <a href="#">
+        <img class="primary-icon brand-logo" src="img/kik.png" alt="Brand logo">
+      </a> 
+    </div>
+    <ul class="nav-list" id="navigation-list">
+      <li class="list-item">
+        <a href="#">Our Service</a>
+      </li>
+      <li class="list-item">
+        <a href="#">About Us</a>
+      </li>
+      <li class="list-item"">
+        <a href="#">Contact</a>
+      </li>
+      <li class="list-item"">
+        <a href="#">Support</a>
+      </li>
+    </ul>
+    <div class="menu" id="toggleBtn">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+    </div>
+  </nav>
+</body>
+
+<script>
+  const toggleButton = document.getElementById('toggleBtn');
+  const navigationList = document.getElementById('navigation-list');
+  toggleButton.addEventListener("click", () => {
+    navigationList.classList.toggle('active');
+  })
+
+
+</script>
+</html>
